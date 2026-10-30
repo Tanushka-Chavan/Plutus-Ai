@@ -1,47 +1,55 @@
-# AI Workflow Orchestrator
+# 🚀 AI Workflow Orchestrator
 
-An autonomous AI project manager that coordinates multiple specialized AI agents on the Masumi Network with Cardano blockchain integration for transparency and automated micropayments.
+**An Autonomous Multi-Agent Workflow Management System powered by the Masumi Network and Cardano Blockchain.**
+
+AI Workflow Orchestrator is an intelligent platform designed to simplify complex business workflows by coordinating multiple specialized AI agents. Built around the concept of autonomous collaboration, it acts as a central orchestration layer that decomposes tasks, discovers suitable agents, manages execution, validates results, and handles payments through Cardano blockchain integration.
+
+The platform combines multi-agent intelligence with decentralized trust, enabling transparent, efficient, and automated AI-driven workflows.
 
 ## 🌟 Overview
 
-The AI Workflow Orchestrator solves the problem of isolated AI agents by acting as a "brain" that:
+The AI Workflow Orchestrator addresses the challenges of isolated AI agents by introducing a centralized intelligence layer that enables them to collaborate seamlessly.
 
-- **Smart Task Decomposition**: Breaks high-level business goals into actionable subtasks
-- **Agent Discovery & Negotiation**: Finds and selects optimal agents based on capabilities, reputation, and pricing
-- **Autonomous Workflow Execution**: Coordinates task execution with real-time monitoring
-- **Reputation-Backed Selection**: Chooses agents based on verified on-chain reputation
-- **Secure On-Chain Logging**: Records all workflow events on Cardano blockchain
-- **Automated Micropayments**: Handles ADA payments to agents upon task completion
-- **Quality Assurance**: Validates outputs and ensures high-quality deliverables
+Its core capabilities include:
 
-## 🏗️ Architecture
+- **Intelligent Task Decomposition:** Converts high-level business objectives into smaller, structured, and actionable tasks.
+- **Dynamic Agent Discovery:** Identifies suitable AI agents based on their capabilities, availability, reputation, and pricing.
+- **Autonomous Workflow Management:** Coordinates task execution, manages dependencies, and monitors progress.
+- **Reputation-Based Agent Selection:** Uses performance history and on-chain reputation to identify reliable agents.
+- **Blockchain-Powered Transparency:** Maintains verifiable workflow records through Cardano blockchain integration.
+- **Automated Micropayments:** Facilitates ADA-based payments to agents upon successful task completion.
+- **Intelligent Quality Validation:** Evaluates agent outputs against predefined quality standards before final delivery.
 
-```
+## 🏗️ System Architecture
+
+The orchestrator serves as the central coordination layer between business objectives, specialized AI agents, and the Cardano blockchain.
+
+```text
 ┌─────────────────────────────────────────────────────────┐
-│           AI Workflow Orchestrator (MCP Server)         │
+│            AI Workflow Orchestrator (MCP Server)        │
 ├─────────────────────────────────────────────────────────┤
 │                                                         │
-│  ┌──────────────┐  ┌──────────────┐  ┌──────────────┐ │
-│  │    Task      │  │    Agent     │  │   Workflow   │ │
-│  │ Decomposer   │  │   Registry   │  │   Executor   │ │
-│  └──────────────┘  └──────────────┘  └──────────────┘ │
+│  ┌──────────────┐  ┌──────────────┐  ┌──────────────┐   │
+│  │    Task      │  │    Agent     │  │   Workflow   │   │
+│  │ Decomposer   │  │   Registry   │  │   Executor   │   │
+│  └──────────────┘  └──────────────┘  └──────────────┘   │
 │                                                         │
-│  ┌──────────────┐  ┌──────────────┐  ┌──────────────┐ │
-│  │  Reputation  │  │    Output    │  │   Cardano    │ │
-│  │   System     │  │  Validator   │  │ Integration  │ │
-│  └──────────────┘  └──────────────┘  └──────────────┘ │
+│  ┌──────────────┐  ┌──────────────┐  ┌──────────────┐   │
+│  │  Reputation  │  │    Output    │  │   Cardano    │   │
+│  │   System     │  │  Validator   │  │ Integration  │   │
+│  └──────────────┘  └──────────────┘  └──────────────┘   │
 │                                                         │
 └─────────────────────────────────────────────────────────┘
                           │
                           ▼
         ┌─────────────────────────────────┐
-        │      Cardano Blockchain         │
-        │  (On-Chain Logging & Payments)  │
+        │        Cardano Blockchain       │
+        │  Transparent Logging & Payments│
         └─────────────────────────────────┘
                           │
                           ▼
         ┌─────────────────────────────────┐
-        │    Specialized AI Agents        │
+        │      Specialized AI Agents     │
         │  ┌────────┐  ┌────────┐         │
         │  │Content │  │  Data  │  ┌────┐ │
         │  │Creator │  │Analyst │  │... │ │
@@ -51,63 +59,87 @@ The AI Workflow Orchestrator solves the problem of isolated AI agents by acting 
 
 ## 🚀 Key Features
 
-### 1. Smart Task Decomposition
-Automatically breaks down complex goals into manageable subtasks:
-- Content creation workflows
-- Data analysis pipelines
-- Software development projects
-- Research initiatives
-- Marketing campaigns
+### 1. Intelligent Task Decomposition
 
-### 2. Intelligent Agent Selection
-Finds optimal agents using:
-- Capability matching
-- Reputation scoring (on-chain verified)
-- Cost optimization
-- Availability checking
+Transforms complex business requirements into structured subtasks that can be independently executed by specialized agents.
 
-### 3. Autonomous Execution
-- Parallel task execution where possible
-- Dependency management
-- Progress monitoring
-- Automatic retry with alternative agents
+Supported workflow categories include:
+- Content creation and publishing
+- Data analysis and reporting
+- Software development
+- Research and information gathering
+- Marketing and campaign management
 
-### 4. Quality Assurance
-- Multi-criteria validation
+### 2. Intelligent Agent Discovery & Selection
+
+Identifies the most suitable agents for each task using multiple selection parameters:
+
+- Capability and skill matching
+- Verified reputation scores
+- Cost and budget optimization
+- Agent availability
+- Historical performance
+
+### 3. Autonomous Workflow Execution
+
+Manages the complete workflow lifecycle with minimal manual intervention.
+
+- Parallel execution of independent tasks
+- Task dependency and execution management
+- Continuous progress tracking
+- Automatic retries and alternative agent selection
+- Centralized workflow monitoring
+
+### 4. Quality Assurance & Output Validation
+
+Ensures that completed tasks meet the expected quality standards through:
+
+- Multi-criteria output evaluation
 - Configurable quality thresholds
-- Feedback loop for continuous improvement
+- Automated validation mechanisms
+- Feedback-driven performance improvement
 
-### 5. Blockchain Integration
-- On-chain event logging for transparency
+### 5. Cardano Blockchain Integration
+
+Introduces transparency and accountability into decentralized AI collaboration.
+
+- On-chain workflow event logging
 - Automated ADA micropayments
-- Escrow contracts for secure settlements
-- Verifiable reputation system
+- Escrow-based payment management
+- Verifiable agent reputation records
+- Transparent transaction history
 
-## 📦 Installation
+## 📦 Installation & Setup
+
+### Prerequisites
+
+- Node.js and npm
+- Git
+- Cardano Preprod wallet configuration
+- Blockfrost API credentials
+
+### 1. Clone the Repository
 
 ```bash
-# Clone the repository
-cd "d:\cardano_hackathon\Cardano AI Agent"
-
-# Install dependencies
-npm install
-
-# Copy environment configuration
-cp .env.example .env
-
-# Edit .env with your configuration
-# Add your Cardano wallet details and API keys
-
-# Build the project
-npm run build
-
-# Run the orchestrator
-npm start
+git clone <YOUR_REPOSITORY_URL>
+cd Plutus-AI
 ```
 
-## 🔧 Configuration
+### 2. Install Dependencies
 
-Edit `.env` file with your settings:
+```bash
+npm install
+```
+
+### 3. Configure Environment Variables
+
+Create a `.env` file using the provided example:
+
+```bash
+cp .env.example .env
+```
+
+Configure the required credentials and application settings:
 
 ```env
 CARDANO_NETWORK=preprod
@@ -116,39 +148,70 @@ BLOCKFROST_PROJECT_ID=your_project_id
 MIN_REPUTATION_SCORE=0.7
 ```
 
+### 4. Build the Project
+
+```bash
+npm run build
+```
+
+### 5. Start the Orchestrator
+
+```bash
+npm start
+```
+
+## 🔧 Configuration
+
+The orchestrator can be configured through environment variables.
+
+| Variable | Description |
+|---|---|
+| `CARDANO_NETWORK` | Target Cardano network |
+| `ORCHESTRATOR_WALLET_ADDRESS` | Orchestrator wallet address |
+| `BLOCKFROST_PROJECT_ID` | Blockfrost API project identifier |
+| `MIN_REPUTATION_SCORE` | Minimum reputation threshold for agent selection |
+
+Use testnet credentials during development. Never expose wallet secrets or API credentials in the repository.
+
 ## 📖 Usage
 
-### Using as MCP Server
+### Using the Orchestrator as an MCP Server
 
-Add to your Claude Desktop or other MCP client configuration:
+The AI Workflow Orchestrator can be integrated with MCP-compatible clients such as Claude Desktop.
+
+Add the following configuration to your MCP client:
 
 ```json
 {
   "mcpServers": {
     "ai-workflow-orchestrator": {
       "command": "node",
-      "args": ["d:\\cardano_hackathon\\Cardano AI Agent\\dist\\index.js"]
+      "args": ["<PROJECT_PATH>/dist/index.js"]
     }
   }
 }
 ```
 
-### Available Tools
+Replace `<PROJECT_PATH>` with the absolute path to your local project directory.
+
+### Available MCP Tools
 
 #### 1. `create_workflow`
-Create a new AI workflow from a business goal:
+
+Creates a new workflow from a high-level business objective.
 
 ```typescript
 {
   "goal": "Create a comprehensive market analysis report for DeFi protocols",
   "budget": 50.0,
-  "deadline": "2025-12-15T00:00:00Z",
+  "deadline": "2026-12-15T00:00:00Z",
   "quality_threshold": 0.9
 }
 ```
 
 #### 2. `get_workflow_status`
-Check workflow progress:
+
+Retrieves the current execution status of a workflow.
 
 ```typescript
 {
@@ -157,7 +220,8 @@ Check workflow progress:
 ```
 
 #### 3. `register_agent`
-Register a new AI agent:
+
+Registers a specialized AI agent with its capabilities and pricing information.
 
 ```typescript
 {
@@ -173,7 +237,8 @@ Register a new AI agent:
 ```
 
 #### 4. `discover_agents`
-Find agents for specific capabilities:
+
+Searches for agents that match the required capabilities and selection criteria.
 
 ```typescript
 {
@@ -184,7 +249,8 @@ Find agents for specific capabilities:
 ```
 
 #### 5. `get_agent_reputation`
-Check agent reputation:
+
+Retrieves an agent's reputation and performance information.
 
 ```typescript
 {
@@ -192,158 +258,174 @@ Check agent reputation:
 }
 ```
 
-## 🎯 Use Cases
+## 🎯 Real-World Use Cases
 
-### 1. Content Production Pipeline
-**Goal**: "Create 10 SEO-optimized blog posts about blockchain technology"
+### 1. Automated Content Production
 
-**Automated Workflow**:
-- Research agent gathers information
-- Writer agent creates content
-- SEO agent optimizes
-- Editor agent reviews
-- Designer agent creates visuals
+**Objective:** Generate 10 SEO-optimized blog posts on blockchain technology.
 
-### 2. Data Analysis Project
-**Goal**: "Analyze customer behavior and create visualization dashboard"
+**Execution Pipeline:**
+1. Research Agent – Collects relevant information and references.
+2. Content Writer Agent – Generates structured blog content.
+3. SEO Agent – Optimizes keywords and content structure.
+4. Editor Agent – Reviews and improves content quality.
+5. Designer Agent – Creates supporting visual assets.
 
-**Automated Workflow**:
-- Data collection agent gathers data
-- Cleaning agent preprocesses
-- Analysis agent performs statistical analysis
-- Visualization agent creates charts
-- Report agent generates insights
+### 2. Intelligent Data Analysis
 
-### 3. Software Development
-**Goal**: "Build a REST API for inventory management"
+**Objective:** Analyze customer behavior and generate an insightful visualization dashboard.
 
-**Automated Workflow**:
-- Architecture agent designs system
-- Backend agent develops API
-- Database agent sets up schema
-- Testing agent writes tests
-- DevOps agent deploys
+**Execution Pipeline:**
+1. Data Collection Agent – Gathers relevant datasets.
+2. Data Cleaning Agent – Processes and prepares the data.
+3. Analysis Agent – Performs statistical analysis.
+4. Visualization Agent – Generates charts and dashboards.
+5. Reporting Agent – Produces a comprehensive insights report.
+
+### 3. Automated Software Development
+
+**Objective:** Develop a REST API for an inventory management system.
+
+**Execution Pipeline:**
+1. Architecture Agent – Designs the application architecture.
+2. Backend Agent – Implements API functionality.
+3. Database Agent – Designs and configures the database.
+4. Testing Agent – Develops and executes test cases.
+5. DevOps Agent – Handles deployment-related tasks.
 
 ## 🔐 Security & Transparency
 
-### On-Chain Logging
-All major events are logged on Cardano:
+### Blockchain-Based Event Logging
+
+Important workflow activities can be recorded on the Cardano blockchain, providing an auditable history of system operations.
+
+Tracked events include:
 - Workflow creation
 - Task assignments
-- Agent payments
+- Agent payment transactions
 - Reputation updates
-- Validation results
+- Output validation results
 
-### Payment Security
-- Escrow contracts protect funds
-- Automatic release on successful completion
-- Refund on quality validation failure
+### Secure Payment Management
 
-### Reputation Verification
-- On-chain reputation records
-- Transparent performance history
-- Badge system for achievements
-- Tiered ranking (Bronze → Silver → Gold → Platinum)
+- Escrow-based payment handling
+- Conditional payment release
+- Quality-based settlement mechanisms
+- Refund handling for unsuccessful tasks
 
-## 🏆 Reputation System
+### Verifiable Agent Reputation
 
-Agents are scored on:
-- **Success Rate** (30%): Task completion ratio
-- **Quality Score** (35%): Average validation scores
-- **Recent Performance** (25%): Last 10 tasks
-- **Experience** (10%): Total tasks completed
+The reputation mechanism maintains transparent performance records and supports trust-based agent selection.
 
-### Agent Tiers
-- 🥉 **Bronze**: New agents (< 10 tasks)
-- 🥈 **Silver**: Established (10+ tasks, 75%+ score)
-- 🥇 **Gold**: High performers (20+ tasks, 85%+ score)
-- 💎 **Platinum**: Elite (50+ tasks, 95%+ score)
+## 🏆 Agent Reputation System
 
-### Badges
+Agents are evaluated using a weighted scoring mechanism:
+
+| Evaluation Metric | Weight |
+|---|---:|
+| Task Success Rate | 30% |
+| Output Quality | 35% |
+| Recent Performance | 25% |
+| Total Experience | 10% |
+
+### Agent Performance Tiers
+
+| Tier | Qualification |
+|---|---|
+| 🥉 Bronze | New agents with fewer than 10 completed tasks |
+| 🥈 Silver | 10+ tasks with a 75%+ score |
+| 🥇 Gold | 20+ tasks with an 85%+ score |
+| 💎 Platinum | 50+ tasks with a 95%+ score |
+
+### Achievement Badges
+
 - 🏅 Veteran, Expert, Experienced
 - ⭐ Quality Master, High Quality
 - 🔥 Perfect Streak
 - ⚡ Fast Responder
 - 🎯 Multi-Skilled
 
-## 🛠️ Development
+## 🛠️ Development & Project Structure
 
-### Project Structure
-
-```
+```text
 src/
-├── index.ts                      # MCP server entry point
+├── index.ts
 ├── orchestrator/
-│   ├── WorkflowOrchestrator.ts   # Main orchestration logic
-│   ├── TaskDecomposer.ts         # Goal → subtasks breakdown
-│   ├── TaskExecutor.ts           # Task execution handler
-│   └── OutputValidator.ts        # Quality validation
+│   ├── WorkflowOrchestrator.ts
+│   ├── TaskDecomposer.ts
+│   ├── TaskExecutor.ts
+│   └── OutputValidator.ts
 ├── registry/
-│   └── AgentRegistry.ts          # Agent management
+│   └── AgentRegistry.ts
 ├── reputation/
-│   └── ReputationSystem.ts       # Reputation tracking
+│   └── ReputationSystem.ts
 ├── blockchain/
-│   └── CardanoIntegration.ts     # Cardano interactions
+│   └── CardanoIntegration.ts
 └── utils/
-    └── logger.ts                 # Logging utility
+    └── logger.ts
 ```
 
-### Building
+### Development Commands
 
 ```bash
 npm run build      # Compile TypeScript
-npm run dev        # Watch mode
-npm run lint       # Run linter
-npm run format     # Format code
+npm run dev        # Start TypeScript watch mode
+npm run lint       # Run code quality checks
+npm run format     # Format source code
 ```
 
-## 🌐 Integration with Masumi Network
+## 🌐 Masumi Network Integration
 
-The orchestrator is designed to work seamlessly with the Masumi Network:
+The platform is designed to leverage the Masumi Network ecosystem for decentralized AI agent collaboration.
 
-- Agent discovery through Masumi registry
+Key integration capabilities include:
+
+- Agent discovery through the Masumi registry
 - Standardized agent communication protocols
 - Reputation synchronization
-- Decentralized agent marketplace
+- Decentralized agent marketplace integration
 
 ## 📊 Monitoring & Analytics
 
-Track workflow performance:
-- Real-time progress updates
-- Cost tracking vs budget
-- Quality metrics
+The orchestrator provides visibility into workflow execution and overall system performance.
+
+Key monitoring metrics include:
+
+- Real-time workflow progress
+- Budget utilization and cost tracking
+- Task completion and execution status
+- Output quality metrics
 - Agent performance analytics
-- On-chain verification
+- Blockchain transaction verification
 
-## 🤝 Contributing
+## 🤝 Future Enhancements
 
-Contributions are welcome! Areas for enhancement:
+Potential areas for further development include:
 
-- [ ] Advanced AI-powered task decomposition (LLM integration)
-- [ ] Smart contract development for escrow
+- [ ] Advanced LLM-powered task decomposition
+- [ ] Smart contract implementation for escrow management
 - [ ] Multi-language agent support
-- [ ] Advanced negotiation algorithms
-- [ ] Real-time agent communication (WebRTC)
-- [ ] Dashboard UI for workflow monitoring
-- [ ] Integration with more agent networks
+- [ ] Intelligent agent negotiation algorithms
+- [ ] Real-time agent communication using WebRTC
+- [ ] Interactive workflow monitoring dashboard
+- [ ] Integration with additional decentralized agent networks
 
 ## 📄 License
 
-MIT License - See LICENSE file for details
+This project is distributed under the **MIT License**. See the `LICENSE` file for details.
 
-## 🔗 Links
+## 🔗 Resources
 
 - [Cardano Documentation](https://docs.cardano.org/)
 - [Model Context Protocol](https://modelcontextprotocol.io/)
 - [Masumi Network](https://masumi.network/)
 
-## 💬 Support
+## 💬 Support & Contributions
 
-For questions or issues:
-- Open an issue on GitHub
-- Join our Discord community
-- Email: support@ai-orchestrator.io
+Contributions, suggestions, and improvements are welcome.
+
+For questions, bug reports, or feature requests, please open an issue in the GitHub repository.
 
 ---
 
-**Built with ❤️ for the Cardano ecosystem**
+**Built with ❤️ for the Cardano and decentralized AI ecosystem.**
